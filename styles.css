@@ -1572,9 +1572,17 @@ h1, h2, h3, .serif {
   position: relative;
 }
 
+.video-wrapper--43 {
+  aspect-ratio: 4 / 3;
+}
+
 .video-wrapper video {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+.video-slot--full .video-wrapper video {
   object-fit: cover;
 }
 
