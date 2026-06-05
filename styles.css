@@ -1146,6 +1146,31 @@ h1, h2, h3, .serif {
   color: var(--grey);
 }
 
+/* Hover hint above flower icons */
+.flower-hover-hint {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.flower-hover-hint::before,
+.flower-hover-hint::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
 /* Caveat note */
 .flower-caveat {
   font-family: var(--font-sans);
@@ -1683,9 +1708,9 @@ footer {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  gap: 48px;
+  gap: 96px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -1718,7 +1743,7 @@ footer {
   font-size: 13px;
   color: rgba(247, 243, 236, 0.5);
   line-height: 1.7;
-  text-align: right;
+  text-align: left;
   font-style: italic;
 }
 
@@ -1877,7 +1902,8 @@ footer {
   }
 
   .footer-inner {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 32px;
   }
 
