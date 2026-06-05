@@ -1703,57 +1703,51 @@ h1, h2, h3, .serif {
    ============================================================ */
 footer {
   background: var(--forest);
-  padding: 72px;
+  padding: 80px 48px 64px;
+  text-align: center;
 }
 
 .footer-inner {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 96px;
-  max-width: 1400px;
-  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
-.footer-left .footer-logo {
+.footer-logo {
   font-family: var(--font-serif);
-  font-size: 28px;
+  font-size: 38px;
   color: var(--cream);
   display: block;
-  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
 }
 
-.footer-left .footer-loc {
+.footer-loc {
   font-family: var(--font-sans);
-  font-size: 13px;
-  color: rgba(247, 243, 236, 0.55);
-  letter-spacing: 0.06em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 236, 0.4);
+  display: block;
+  margin-bottom: 36px;
 }
 
-.footer-center p {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  color: rgba(247, 243, 236, 0.5);
-  line-height: 1.7;
-  text-align: center;
-}
-
-.footer-right p {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  color: rgba(247, 243, 236, 0.5);
-  line-height: 1.7;
-  text-align: left;
-  font-style: italic;
-}
-
-.footer-divider {
+.footer-rule {
+  width: 36px;
   height: 1px;
-  background: rgba(247, 243, 236, 0.1);
-  margin: 48px 0 0;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  background: var(--accent);
+  opacity: 0.5;
+  margin-bottom: 28px;
+}
+
+.footer-credit {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(247, 243, 236, 0.38);
+  line-height: 1.7;
 }
 
 /* ============================================================
@@ -1898,18 +1892,7 @@ footer {
 
   /* Footer */
   footer {
-    padding: 64px 24px;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-  }
-
-  .footer-center p,
-  .footer-right p {
-    text-align: left;
+    padding: 64px 24px 48px;
   }
 
   /* General sections */
